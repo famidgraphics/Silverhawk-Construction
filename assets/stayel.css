@@ -1,0 +1,886 @@
+/* font-family: 'Open Sans', sans-serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* ------------------------ global style ----------------- */
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.text-white {
+    color: white;
+}
+/* -------------------------- topbar-section --------------- */
+
+.topbar-section {
+    background: #173a69;
+    padding: 10px 0px;
+}
+
+.topbar-section .topbar-parents .topber-one,
+.topbar-section .topbar-parents .topber-two {
+    width: 50%;
+}
+
+.topbar-section .topbar-parents .topber-two ul {
+    justify-content: end;
+}
+
+.topbar-section .topbar-parents .topber-one ul li {
+    margin-right: 42px;
+}
+
+.topbar-section .topbar-parents .topber-one ul li span {
+    margin-right: 9px;
+}
+
+.topbar-section .topbar-parents .topber-one ul li a {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.topbar-section .topbar-parents .topber-two ul li a {
+    margin-left: 25px;
+}
+
+/* ----------------manubar-section-------------- */
+
+.manubar-section .manubar-parents .manubar-one {
+    width: 20%;
+}
+
+.manubar-section .manubar-parents .manubar-one a img {
+    padding: 15px 0px;
+}
+
+.manubar-section .manubar-parents .manubar-two a {
+    padding: 15px 0px;
+}
+
+.manubar-section .manubar-parents .manubar-two {
+    width: 80%;
+}
+
+.manubar-section .manubar-parents .manubar-two ul {
+    justify-content: end;
+}
+
+.manubar-section .manubar-parents .manubar-two ul li a {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #0c1f38;
+    padding-left: 78px;
+    padding-bottom: 47px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+.manubar-section .manubar-parents .manubar-two ul li a::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 0;
+    background: #0c1f38;
+    bottom: 0;
+    left: 80%;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+
+.manubar-section .manubar-parents .manubar-two ul li a:hover::after{
+    width: 100%;
+}
+
+/* ---------------------- baner-section -----------------  */
+
+.baner-section {
+    background-image: url(../img/banner-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 170px 0 160px 0;
+    position: relative;
+    z-index: 999;
+}
+
+.baner-section::after {
+    content: "";
+    position: absolute;
+    background: url(../img/ovarlay-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    opacity: .2;
+}
+    
+.baner-section .baner-parents .baner-content .subtitle h5 {
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.baner-section .baner-parents .baner-content .title h1 {
+    font-size: 60px;
+    line-height: 66px;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.baner-section .baner-parents {
+    margin-left: 622px;
+    display: inline-block;
+}
+
+.baner-section .baner-parents .baner-content .baner-des p {
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    max-width: 401px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.baner-section .baner-parents {
+    justify-content: end;
+}
+
+.baner-section .baner-parents .baner-content {
+    max-width: 800px;
+} 
+
+.baner-section .baner-parents .baner-content .baner-btn span {
+    margin-right: 14px;
+}
+
+.baner-section .baner-parents .baner-content .baner-btn span a.active {
+    background: #173a69;
+    color: white;
+}
+
+.baner-section .baner-parents .baner-content .baner-btn span a {
+    font-size: 14px;
+    border: 2px solid #173a69;
+    color: #173a69;
+    padding: 16px 27px;
+    margin-top: 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+}
+  
+.baner-section .baner-parents .baner-content .baner-btn span a:hover {
+    background: #173a69;
+    border: 2px solid #173a69;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* -----------------------services-section------------- */
+
+.services-section .services-parents .services-title {
+    text-align: center;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    padding-top: 94px;
+}
+
+.services-section .services-parents .services-title img {
+    padding:25px 0px 72px 0px ;
+}
+
+.services-section .services-parents .icons .icons-one,
+.services-section .services-parents .icons .icons-two,
+.services-section .services-parents .icons .icons-three {
+    width: 33.33%;
+    text-align: center;
+}
+
+.services-section .services-parents .icons .icons-one h2,
+.services-section .services-parents .icons .icons-two h2,
+.services-section .services-parents .icons .icons-three h2 {
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 138px;
+}
+
+.services-section .services-parents .icons .icons-one img,
+.services-section .services-parents .icons .icons-two img,
+.services-section .services-parents .icons .icons-three img {
+    padding-bottom: 38px;
+    
+}
+
+/* --------------------------about-section----------------- */
+
+.about-section {
+    padding: 80px 97px;
+    background: #f3f3f3;
+}
+
+.about-section .about-parents {
+    column-gap: 2%;
+}
+
+.about-section .about-parents .about-one {
+    width: 39%;
+}
+
+.about-section .about-parents .about-one .picture img {
+    width: 100%;
+}
+
+.picture {
+    position: relative;
+}
+
+.hover-picture::after {
+    content: "";
+    position: absolute;
+    border-bottom: 3px dotted #b4b2b2;
+}
+
+.picture:hover .hover-picture {
+    display: none;
+}
+
+.hover-picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.about-section .about-parents .about-two {
+    width: 59%;
+}
+
+.about-section .about-parents .about-two h1 {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.about-section .about-parents .about-two img {
+    padding: 39px 0 28px 0;
+}
+
+.about-section .about-parents .about-two p {
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 82%;
+    align-items: center;
+}
+
+
+/* ------------------- gellary-section ---------------------------- */
+
+.gellary-section .gellary-title {
+    text-align: center;
+}
+
+.gellary-section .gellary-title h4 {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    padding-top: 97px; 
+}
+
+.gellary-section .gellary-title img {
+    padding: 35px 0px 68px 0px;
+}
+.gellary-section .gellary-parents {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.gellary-section .gellary-parents .gellary-item img {
+    width: 100%;
+}
+
+.gellary-section .gellary-parents .gellary-item .gellary-img {
+    position: relative;
+}
+.gellary-section .gellary-parents .gellary-item .gellary-content {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50% -50%);
+    opacity: 0;
+    transform: .5s;
+    z-index: 999;
+    text-align: center;
+    color: white;
+}
+
+.gellary-section .gellary-parents .gellary-item .gellary-content i {
+    color: white;
+    font-size: 35px;
+    padding-bottom: 14px;
+}
+
+.gellary-section .gellary-parents .gellary-item .gellary-content h2 {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+}
+
+.gellary-section .gellary-parents .gellary-item .gellary-content p {
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.gellary-section .gellary-parents .gellary-item:hover .gellary-content {
+    opacity: 1;
+    padding-bottom: -2px;
+}
+
+.gellary-section .gellary-parents .gellary-item {
+    position: relative;
+    
+}
+
+.gellary-section .gellary-parents .gellary-item::after {
+    content: "";
+    position: absolute;
+    height: 98.5%;
+    width: 0;
+    background: #000000;
+    top: 0;
+    opacity: .7;
+    transition: .5s;
+}
+
+.gellary-section .gellary-parents .gellary-item:hover::after {
+    width: 100%;
+}
+
+.gellary-section .gellar-btn {
+   text-align: center;
+   margin: 42px 0 95px 0;
+}
+
+.gellary-section .gellar-btn a {
+    color: white;
+    background: #173a69;
+    padding: 16px 28px;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.gellary-section .gellar-btn a:hover {
+    border: 2px solid #173a69;
+    color: #173a69;
+    background: white;
+}
+
+
+/* ----------------------------project-today-section-------------- */
+
+.project-today-section {
+    padding: 87px 0px;
+    background: #173a69;
+}
+.project-today-section .project-today-parents .project-title h6 {
+    
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    
+}
+
+.project-today-section .project-today-parents .project-title a {
+    color: white;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* --------------------lastbar-section---------------------- */
+
+.lastbar-section .lastbar-parents {
+    text-align: center;
+}
+
+.lastbar-section .lastbar-parents .lastbar-one .logos img {
+    padding: 72px 0 51px 0; 
+}
+
+
+ 
+.lastbar-section .lastbar-parents .lastbar-two ul {
+    justify-content: center;
+    padding-bottom: 72px;
+}
+
+.lastbar-section .lastbar-parents .lastbar-two .icons ul li {
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    border: 2px solid #acacac;
+    font-size: 25px;
+    margin-left: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.lastbar-section .lastbar-parents .lastbar-two .icons a{
+    color: #acacac;
+}
+
+.lastbar-section .lastbar-parents .lastbar-two .icons a:hover{
+    color: #acacac;
+}
+.lastbar-section .lastbar-parents .lastbar-two .icons ul li:hover{
+    background: #173a69;
+    color: white;
+    border: 2px solid #173a69;
+}
+
+
+
+/* -------------------- footer-section ------------------- */
+
+footer p {
+    background-color:#000000 ;
+    color:white;
+    padding: 32px 0;
+    text-align: center;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;    
+}
+
+/* ------------------------gallery-manu-banner-section---------------------- */
+
+.gallery-manu-section {
+    background-image: url(../img/gallery-o.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0px;
+    position: relative;
+    z-index: 999;
+}
+
+.gallery-manu-section::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/gallery-ppp.jpg);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    opacity: .9;
+    z-index: -1;
+}
+
+.gallery-manu-section .gallery-manu-parents {
+    text-align: center;
+    padding: 97px 0 104px 0;
+    color: white;
+}
+
+.gallery-manu-section .gallery-manu-parents .gallery-manu-title {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.gallery-manu-section .gallery-manu-parents .gallery-manu-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 22px;
+}
+
+/* ---------------------gallery-portfolio-section---------------------- */
+
+.gellary-section .gellary-parents {
+    padding-top: 87px;
+    padding-bottom: 112px;
+}
+
+/* ---------------------------house-services-section-------------------- */
+
+.house-section {
+    padding: 123px 0 134px 0;
+    background: #f8f8f8;
+}
+.house-section .house-parents {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4%; 
+}
+
+.house-section .house-parents .house-one .services-title h2, 
+.house-section .house-parents .house-two .services-title h2, 
+.house-section .house-parents .house-three .services-title h2 {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    padding: 28px 0 24px 0;
+}
+
+.house-section .house-parents .house-one .services-des p, 
+.house-section .house-parents .house-two .services-des p, 
+.house-section .house-parents .house-three .services-des p {
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+/* ---------------- about-manubar-section------------------- */
+
+.about-section .about-parents .about-two h2 {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.about-section .about-parents .about-two h2 b {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #173a69;
+}
+
+/* --------------------about-sales-section------------------------- */
+
+.sales-section {
+    background-image: url(../img/sales-img.png);
+    padding: 80px 0;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    width: 100%;
+}
+
+.sales-section .sales-parents {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3%;
+    text-align: center;
+    margin: 0 130px;
+      
+}
+
+
+.sales-section .sales-parents .sales-one,
+.sales-section .sales-parents .sales-two,
+.sales-section .sales-parents .sales-three {
+    background: #fff;
+    padding: 31px 29px 45px 26px;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.sales-section .sales-parents .sales-one h2,
+.sales-section .sales-parents .sales-two h2,
+.sales-section .sales-parents .sales-three h2 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #173a69;
+    padding: 21px 0 14px 0;
+}
+
+.sales-section .sales-parents .sales-one p,
+.sales-section .sales-parents .sales-two p,
+.sales-section .sales-parents .sales-three p {
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    max-width: 330px;
+    padding: 16px 0;
+}
+
+.sales-section .sales-parents .sales-one .sales-des span,
+.sales-section .sales-parents .sales-two .sales-des span,
+.sales-section .sales-parents .sales-three .sales-des span {
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    color: #173a69;
+}
+
+
+/* -------------------------about-Silver-section----------------- */
+
+.Silver-section .Silver-parents .content {
+    text-align: center;
+    font-size: 21px;
+    line-height: 27px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    padding: 46px 0 49px 0;   
+}
+
+.Silver-section .Silver-parents .content span {
+    color: #173a69;
+}
+
+/* -------------------about-Questions-section---------------- */
+
+.question-section{
+    background-image: url(../img/Q4.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    padding: 83px 0 124px 0;
+}
+
+.question-section .question-parents {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2%;
+    margin: 0 130px;
+    
+
+}
+
+.question-section .question-parents .question-one,
+.question-section .question-parents .question-two,
+.question-section .question-parents .question-three {
+    text-align: center;
+    
+    
+}
+
+.question-section .question-parents .question-one .about-title h2,
+.question-section .question-parents .question-two .about-title h2,
+.question-section .question-parents .question-three .about-title h2 {
+    font-size: 25px;
+    line-height: 31px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    padding: 37px 0 19px 0;
+    color: #173a69;
+}
+
+.question-section .question-parents .question-one .question-des p,
+.question-section .question-parents .question-two .question-des p,
+.question-section .question-parents .question-three .question-des p {
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #494949;
+    max-width: 100%;
+}
+
+/* -----------------------------Contact Us---------------  */
+
+.contact-section .contact-parents{
+    display: flex;
+    column-gap: 3%;
+}
+
+.contact-section .contact-parents .contact-one{
+    width: 70%;
+}
+
+.contact-section .contact-parents .contact-one .title h1{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 100px;
+}
+
+.contact-section .contact-parents .contact-one .title p{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 0 30px 0;
+}
+
+.contact-section .contact-parents .contact-one .name-email{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+
+.contact-section .contact-parents .contact-one .name-email input{
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 10px 0 10px 15px;
+    box-sizing: border-box;
+}
+
+.contact-section .contact-parents .contact-one .name-email input::placeholder{
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact-section .contact-parents .contact-one .name-email input:focus,
+.contact-section .contact-parents .contact-one .subject input:focus,
+.contact-section .contact-parents .contact-one .message textarea:focus{
+    background: wheat;
+    outline: 0;
+}
+
+.contact-section .contact-parents .contact-one .subject input{
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 10px 0 10px 15px;
+    box-sizing: border-box;
+}
+
+.contact-section .contact-parents .contact-one .subject input::placeholder{
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact-section .contact-parents .contact-one .message textarea{
+    width: 100%;
+    padding: 10px 0 0 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.contact-section .contact-parents .contact-one .message textarea::placeholder{
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact-section .contact-parents .contact-one .btn a{
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    padding: 15px 30px;
+    text-align: center;
+
+}
+
+.contact-section .contact-parents .contact-one .btn a.active {
+    background: #173a69;
+    color: white;
+}
+
+.contact-section .contact-parents .contact-one .btn{
+    margin-bottom: 73px;
+}
+
+.contact-section .contact-parents .contact-one .btn a:hover{
+    background: white;
+    color: #173a69;
+    border: 1px solid #173a69;
+}
+
+.contact-section .contact-parents .contact-two{
+    width: 27%;
+}
+
+.contact-section .contact-parents .contact-two .title h2{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 110px;
+}
+
+.contact-section .contact-parents .contact-two .contact-list ul li{
+    display: flex;
+    margin-top: 20px;
+}
+
+.contact-section .contact-parents .contact-two .contact-list ul li span{
+    margin-right: 15px;
+}
+
+.contact-section .contact-parents .contact-two .contact-list ul li i {
+    color: #173a69;
+}
+
+.contact-section .contact-parents .contact-two .contact-list ul li p{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    color:#173a69;
+    margin-right: 5px;
+}
+
+.contact-section .contact-parents .contact-two .contact-list ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+
