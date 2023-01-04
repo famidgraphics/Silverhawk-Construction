@@ -1,2 +1,2 @@
 # Silverhawk-Construction
-https://github.com/famidgraphics/Silverhawk-Construction.git
+https://famidgraphics.github.io/Silverhawk-Construction/
